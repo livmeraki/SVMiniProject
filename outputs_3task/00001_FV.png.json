@@ -3,6 +3,18 @@
   "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
   "device": "mps",
   "scene_id": "00001_FV",
+  "actor_preprocessing": {
+    "strategy": "top_scene_crop",
+    "crop_ratio": 0.72,
+    "original_size": [
+      1280,
+      966
+    ],
+    "actor_input_size": [
+      1280,
+      696
+    ]
+  },
   "environment": {
     "raw_response": "{\"scene_id\":\"00001_FV\",\"weather\":\"clear\",\"lighting\":\"day\",\"road_type\":\"urban\",\"road_geometry\":\"straight\",\"intersection_present\":\"yes\",\"traffic_density\":\"low\"}",
     "parsed_json": {
@@ -24,8 +36,9 @@
       "traffic_density": "low"
     },
     "validation_errors": [],
+    "format_success": true,
     "success": true,
-    "elapsed_seconds": 9.41
+    "elapsed_seconds": 6.036
   },
   "actor_buckets": {
     "raw_response": "{\"scene_id\":\"00001_FV\",\"vehicle_count_bucket\":\"0\",\"pedestrian_count_bucket\":\"0\",\"cyclist_count_bucket\":\"0\",\"large_vehicle_count_bucket\":\"0\"}",
@@ -44,8 +57,9 @@
       "large_vehicle_count_bucket": "0"
     },
     "validation_errors": [],
+    "format_success": true,
     "success": true,
-    "elapsed_seconds": 6.174
+    "elapsed_seconds": 4.989
   },
   "observability": {
     "raw_response": "{\"scene_id\":\"00001_FV\",\"drivable_area_visibility\":\"clear\",\"lane_marking_visibility\":\"clear\",\"occlusion_level\":\"low\",\"fisheye_distortion_impact\":\"low\"}",
@@ -64,8 +78,9 @@
       "fisheye_distortion_impact": "low"
     },
     "validation_errors": [],
+    "format_success": true,
     "success": true,
-    "elapsed_seconds": 7.82
+    "elapsed_seconds": 6.353
   },
-  "elapsed_seconds_total": 24.07
+  "elapsed_seconds_total": 17.911
 }
