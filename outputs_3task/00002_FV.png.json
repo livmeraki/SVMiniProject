@@ -1,0 +1,68 @@
+{
+  "image": "rgb_images/00002_FV.png",
+  "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "device": "mps",
+  "scene_id": "00002_FV",
+  "environment": {
+    "raw_response": "{\"scene_id\":\"00002_FV\",\"weather\":\"clear\",\"lighting\":\"day\",\"road_type\":\"urban\",\"road_geometry\":\"straight\",\"intersection_present\":\"no\",\"traffic_density\":\"low\"}",
+    "parsed_json": {
+      "scene_id": "00002_FV",
+      "weather": "clear",
+      "lighting": "day",
+      "road_type": "urban",
+      "road_geometry": "straight",
+      "intersection_present": "no",
+      "traffic_density": "low"
+    },
+    "normalized_json": {
+      "scene_id": "00002_FV",
+      "weather": "clear",
+      "lighting": "day",
+      "road_type": "urban",
+      "road_geometry": "straight",
+      "intersection_present": "no",
+      "traffic_density": "low"
+    },
+    "validation_errors": [],
+    "success": true,
+    "elapsed_seconds": 6.253
+  },
+  "actor_buckets": {
+    "raw_response": "{\"scene_id\":\"00002_FV\",\"vehicle_count_bucket\":\"0\",\"pedestrian_count_bucket\":\"0\",\"large_vehicle_count_bucket\":\"0\"}",
+    "parsed_json": {
+      "scene_id": "00002_FV",
+      "vehicle_count_bucket": "0",
+      "pedestrian_count_bucket": "0",
+      "large_vehicle_count_bucket": "0"
+    },
+    "normalized_json": {
+      "scene_id": "00002_FV",
+      "vehicle_count_bucket": "0",
+      "pedestrian_count_bucket": "0",
+      "cyclist_count_bucket": "unknown",
+      "large_vehicle_count_bucket": "0"
+    },
+    "validation_errors": [
+      "Missing cyclist_count_bucket; set to unknown"
+    ],
+    "success": false,
+    "elapsed_seconds": 5.292
+  },
+  "observability": {
+    "raw_response": "{\"scene_id\":\"00002_FV\",\"drivable_area_visibility\":\"!                Or    Or     Or    Or   !  Or  !  Or    //  //  //  //  //  //  //  //                                       !          !         !    !    !",
+    "parsed_json": null,
+    "normalized_json": {
+      "scene_id": "00002_FV",
+      "drivable_area_visibility": "unknown",
+      "lane_marking_visibility": "unknown",
+      "occlusion_level": "unknown",
+      "fisheye_distortion_impact": "unknown"
+    },
+    "validation_errors": [
+      "ValueError: No valid JSON object found in model response"
+    ],
+    "success": false,
+    "elapsed_seconds": 21.935
+  },
+  "elapsed_seconds_total": 34.385
+}

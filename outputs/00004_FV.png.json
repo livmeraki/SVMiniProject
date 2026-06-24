@@ -1,0 +1,20 @@
+{
+  "image": "rgb_images/00004_FV.png",
+  "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "device": "mps",
+  "response_prefill": "{\"weather\":\"",
+  "raw_response": "{\"weather\":\"clear\",\"lighting\":\"day\",\"road_type\":\"urban\",\"traffic_density\":\"low\"}",
+  "raw_response_attempts": [
+    "{\"weather\":\"clear\", \"lighting\":\"day\", \"road_type\":\"urban\", \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"low\",\"medium\",\"high\"], \"traffic_density\":[\"",
+    "{\"weather\":\"clear\",\"lighting\":\"day\",\"road_type\":\"urban\",\"traffic_density\":\"low\"}"
+  ],
+  "parsed_json": {
+    "weather": "clear",
+    "lighting": "day",
+    "road_type": "urban",
+    "traffic_density": "low"
+  },
+  "parsing_error": null,
+  "inference_error": null,
+  "elapsed_seconds": 29.562
+}

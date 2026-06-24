@@ -1,0 +1,44 @@
+{
+  "image": "rgb_images/00000_FV.png",
+  "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "device": "mps",
+  "inference_strategy": "five_grouped_prompts",
+  "raw_response": {
+    "environment": "{\"weather\":\"clear\", \"lighting\":\"backlit_or_glare\", \"road_type\":\"highway\", \"road_geometry\":\"curved\", \"intersection_present\":\"no\", \"junction_type\":\"3_way_intersection\", \"traffic_density\":\"\"}",
+    "actor_counts": "{\"vehicle_count_total\":-1,\"car_count\":-1,\"truck_count\":-1,\"bus_count\":-1,\"motorcycle_count\":-1,\"bicycle_count\":-1,\"parked_vehicle_count\":-1,\"moving_vehicle_count_estimate\":-1\n}",
+    "operational_context": "{\"pedestrian_present\":\"\",\"cyclist_present\":\"\",\"motorcycle_present\":\"\",\"large_vehicle_present\":\"\",\"ego_speed_inferable\":\"\",\"parking_context\":\"\",\"construction_zone_present\":\"\",\"traffic_control_present\":[]}",
+    "observability": "{\"drivable_area_visibility\":\"clear | partially_visible | poor | unknown\",\"lane_marking_visibility\":\"clear | faint_or_partial | not_visible | unknown\",\"occlusion_level\":\"high | low | medium | unknown\",\"image_quality_issues\":[]}",
+    "summary": "{\"notable_objects\":[],\"confidence_notes\":\"\"}"
+  },
+  "raw_response_attempts": {
+    "environment": [
+      "{\"weather\":\"clear\", \"lighting\":\"backlit_or_glare\", \"road_type\":\"highway\", \"road_geometry\":\"curved\", \"intersection_present\":\"no\", \"junction_type\":\"3_way_intersection\", \"traffic_density\":\"\"}",
+      "{\"weather\":\"clear\", \"lighting\":\"backlit_or_glare\", \"road_type\":\"highway\", \"road_geometry\":\"curved\", \"intersection_present\":\"no\", \"junction_type\":\"3_way_intersection\", \"traffic_density\":\"\"}"
+    ],
+    "actor_counts": [
+      "{\"vehicle_count_total\":-1,\"car_count\":-1,\"truck_count\":-1,\"bicycle_count\":-1,\"motorcycle_count\":-1,\"parked_vehicle_count\":-1,\"moving_vehicle_count_estimate\":-1}",
+      "{\"vehicle_count_total\":-1,\"car_count\":-1,\"truck_count\":-1,\"bus_count\":-1,\"motorcycle_count\":-1,\"bicycle_count\":-1,\"parked_vehicle_count\":-1,\"moving_vehicle_count_estimate\":-1\n}"
+    ],
+    "operational_context": [
+      "{\"pedestrian_present\":\"\",\"cyclist_present\":\"\",\"motorcycle_present\":\"\",\"large_vehicle_present\":\"\",\"ego_speed_inferable\":\"\",\"parking_context\":\"\",\"construction_zone_present\":\"\",\"traffic_control_present\":[]}",
+      "{\"pedestrian_present\":\"\",\"cyclist_present\":\"\",\"motorcycle_present\":\"\",\"large_vehicle_present\":\"\",\"ego_speed_inferable\":\"\",\"parking_context\":\"\",\"construction_zone_present\":\"\",\"traffic_control_present\":[]}"
+    ],
+    "observability": [
+      "{\"drivable_area_visibility\":\"clear | partially_visible | poor | unknown\",\"lane_marking_visibility\":\"clear | faint_or_partial | not_visible | unknown\",\"occlusion_level\":\"high | low | medium | unknown\",\"image_quality_issues\":[]}",
+      "{\"drivable_area_visibility\":\"clear | partially_visible | poor | unknown\",\"lane_marking_visibility\":\"clear | faint_or_partial | not_visible | unknown\",\"occlusion_level\":\"high | low | medium | unknown\",\"image_quality_issues\":[]}"
+    ],
+    "summary": [
+      "{\"notable_objects\":[]}",
+      "{\"notable_objects\":[],\"confidence_notes\":\"\"}"
+    ]
+  },
+  "parsed_json": null,
+  "partial_parsed_json": {
+    "scene_id": "00000_FV",
+    "notable_objects": [],
+    "confidence_notes": ""
+  },
+  "parsing_error": "environment: first=Invalid 'traffic_density' value: ''; retry=Invalid 'traffic_density' value: '' | actor_counts: first=JSON fields do not match schema; missing=['bus_count', 'pedestrian_count'], extra=[]; retry=JSON fields do not match schema; missing=['pedestrian_count'], extra=[] | operational_context: first=JSON fields do not match schema; missing=['crosswalk_present', 'traffic_light_present'], extra=[]; retry=JSON fields do not match schema; missing=['crosswalk_present', 'traffic_light_present'], extra=[] | observability: first=JSON fields do not match schema; missing=['fisheye_distortion_impact'], extra=[]; retry=JSON fields do not match schema; missing=['fisheye_distortion_impact'], extra=[]",
+  "inference_error": null,
+  "elapsed_seconds": 153.904
+}

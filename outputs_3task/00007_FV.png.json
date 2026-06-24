@@ -1,0 +1,65 @@
+{
+  "image": "rgb_images/00007_FV.png",
+  "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "device": "mps",
+  "scene_id": "00007_FV",
+  "environment": {
+    "raw_response": "{\"scene_id\":\"00007_FV\",\"weather\":\"FVFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+    "parsed_json": null,
+    "normalized_json": {
+      "scene_id": "00007_FV",
+      "weather": "unknown",
+      "lighting": "unknown",
+      "road_type": "unknown",
+      "road_geometry": "unknown",
+      "intersection_present": "unknown",
+      "traffic_density": "unknown"
+    },
+    "validation_errors": [
+      "ValueError: No valid JSON object found in model response"
+    ],
+    "success": false,
+    "elapsed_seconds": 19.551
+  },
+  "actor_buckets": {
+    "raw_response": "{\"scene_id\":\"00007_FV\",\"vehicle_count_bucket\":\"0\",\"pedestrian_count_bucket\":\"0\",\"cyclist_count_bucket\":\"0\",\"large_vehicle_count_bucket\":\"0\"}",
+    "parsed_json": {
+      "scene_id": "00007_FV",
+      "vehicle_count_bucket": "0",
+      "pedestrian_count_bucket": "0",
+      "cyclist_count_bucket": "0",
+      "large_vehicle_count_bucket": "0"
+    },
+    "normalized_json": {
+      "scene_id": "00007_FV",
+      "vehicle_count_bucket": "0",
+      "pedestrian_count_bucket": "0",
+      "cyclist_count_bucket": "0",
+      "large_vehicle_count_bucket": "0"
+    },
+    "validation_errors": [],
+    "success": true,
+    "elapsed_seconds": 7.52
+  },
+  "observability": {
+    "raw_response": "{\"scene_id\":\"00007_FV\",\"drivable_area_visibility\":\"clear\",\"lane_marking_visibility\":\"clear\",\"occlusion_level\":\"low\",\"fisheye_distortion_impact\":\"low\"}",
+    "parsed_json": {
+      "scene_id": "00007_FV",
+      "drivable_area_visibility": "clear",
+      "lane_marking_visibility": "clear",
+      "occlusion_level": "low",
+      "fisheye_distortion_impact": "low"
+    },
+    "normalized_json": {
+      "scene_id": "00007_FV",
+      "drivable_area_visibility": "clear",
+      "lane_marking_visibility": "clear",
+      "occlusion_level": "low",
+      "fisheye_distortion_impact": "low"
+    },
+    "validation_errors": [],
+    "success": true,
+    "elapsed_seconds": 5.983
+  },
+  "elapsed_seconds_total": 33.767
+}

@@ -1,0 +1,71 @@
+{
+  "image": "rgb_images/00011_FV.png",
+  "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "device": "mps",
+  "scene_id": "00011_FV",
+  "environment": {
+    "raw_response": "{\"scene_id\":\"00011_FV\",\"weather\":\"clear\",\"lighting\":\"day\",\"road_type\":\"urban\",\"road_geometry\":\"straight\",\"intersection_present\":\"yes\",\"traffic_density\":\"low\"}",
+    "parsed_json": {
+      "scene_id": "00011_FV",
+      "weather": "clear",
+      "lighting": "day",
+      "road_type": "urban",
+      "road_geometry": "straight",
+      "intersection_present": "yes",
+      "traffic_density": "low"
+    },
+    "normalized_json": {
+      "scene_id": "00011_FV",
+      "weather": "clear",
+      "lighting": "day",
+      "road_type": "urban",
+      "road_geometry": "straight",
+      "intersection_present": "yes",
+      "traffic_density": "low"
+    },
+    "validation_errors": [],
+    "success": true,
+    "elapsed_seconds": 6.255
+  },
+  "actor_buckets": {
+    "raw_response": "{\"scene_id\":\"00011_FV\",\"vehicle_count_bucket\":\"0\",\"pedestrian_count_bucket\":\"0\",\"cyclist_count_bucket\":\"0\",\"large_vehicle_count_bucket\":\"0\"}",
+    "parsed_json": {
+      "scene_id": "00011_FV",
+      "vehicle_count_bucket": "0",
+      "pedestrian_count_bucket": "0",
+      "cyclist_count_bucket": "0",
+      "large_vehicle_count_bucket": "0"
+    },
+    "normalized_json": {
+      "scene_id": "00011_FV",
+      "vehicle_count_bucket": "0",
+      "pedestrian_count_bucket": "0",
+      "cyclist_count_bucket": "0",
+      "large_vehicle_count_bucket": "0"
+    },
+    "validation_errors": [],
+    "success": true,
+    "elapsed_seconds": 6.181
+  },
+  "observability": {
+    "raw_response": "{\"scene_id\":\"00011_FV\",\"drivable_area_visibility\":\"clear\",\"lane_marking_visibility\":\"clear\",\"occlusion_level\":\"low\",\"fisheye_distortion_impact\":\"low\"}",
+    "parsed_json": {
+      "scene_id": "00011_FV",
+      "drivable_area_visibility": "clear",
+      "lane_marking_visibility": "clear",
+      "occlusion_level": "low",
+      "fisheye_distortion_impact": "low"
+    },
+    "normalized_json": {
+      "scene_id": "00011_FV",
+      "drivable_area_visibility": "clear",
+      "lane_marking_visibility": "clear",
+      "occlusion_level": "low",
+      "fisheye_distortion_impact": "low"
+    },
+    "validation_errors": [],
+    "success": true,
+    "elapsed_seconds": 6.109
+  },
+  "elapsed_seconds_total": 19.249
+}
